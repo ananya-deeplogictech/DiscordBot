@@ -14,7 +14,7 @@ const rest = new REST({ version: '10' }).setToken("YOUR_BOT_TOKEN");
 try {
   console.log('Started refreshing application (/) commands.');
 
-  await rest.put(Routes.applicationCommands("1333318505587544097"), { body: commands });
+  await rest.put(Routes.applicationCommands("Client-id"), { body: commands });
 
   console.log('Successfully reloaded application (/) commands.');
 } catch (error) {
